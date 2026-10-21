@@ -3,6 +3,7 @@ class Kn < Formula
   homepage "https://github.com/yijiezhong/Keynote"
   version "3.0.0"
   license "MIT"
+  depends_on :macos
 
   on_macos do
     on_arm do
@@ -15,8 +16,6 @@ class Kn < Formula
       sha256 "66a45ece8843b0fdfa612a4fd87a63c742f2113491abb40b79ee42c8e737c307"
     end
   end
-
-  depends_on :macos
 
   def install
     bin.install "kn"
