@@ -1,8 +1,8 @@
 class Kn < Formula
   desc "Rust CLI for reading and editing Apple Keynote .key files"
   homepage "https://github.com/yijiezhong/Keynote"
-  url "https://github.com/yijiezhong/Keynote/releases/download/v3.0.0/kn-v3.0.0-universal.tar.gz"
-  sha256 "397052c3501e16f4c35705d8331e069cf6e934fb72551e742af8e76f5a2e5efb"
+  url "https://github.com/yijiezhong/Keynote/releases/download/v3.0.1/kn-v3.0.1-universal.tar.gz"
+  sha256 "ebadf61480938bf45abcb22d2b8527f615c44b2b4cf798b21d11ffac61ab6ca5"
   license "MIT"
   depends_on :macos
 
@@ -11,6 +11,6 @@ class Kn < Formula
   end
 
   test do
-    assert_match "56", shell_output("#{bin}/kn help")
+    assert_match "57 条命令", shell_output("#{bin}/kn help")
   end
 end
